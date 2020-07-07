@@ -1,7 +1,11 @@
 ### output files
+
 -----
 ## Detection
-- Outputs of face identification
+-Outputs of face detection and identification
+
+-Output csv file (bounding box with csv)
+<video_name>/.csv
 
 ## Landmarks
 - Outputs of face landmark detection
