@@ -3,6 +3,7 @@ from pathlib import Path
 import torch
 from torch.nn import CrossEntropyLoss
 from torchvision import transforms as trans
+import os
 
 def get_config(training = True):
     print("GPU:",torch.cuda.is_available())
@@ -47,7 +48,7 @@ def get_config(training = True):
         conf.ce_loss = CrossEntropyLoss()    
 #--------------------Inference Config ------------------------
     else:
-        conf.facebank_path = conf.data_path/'news'
+        conf.facebank_path = os.path.join(conf.data_path,'news')
         conf.threshold = 0.2
         conf.face_limit = 30 
         #when inference, at maximum detect 10 faces in one image, my laptop is slow
