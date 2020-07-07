@@ -5,7 +5,7 @@ import sys
 # Modules for landmark detection
 from modules.landmarks.id_detect import csv_reader, detect_from_id
 # Modules for face detection
-from modules.facedetection.fd_on_video import face_detection
+from modules.detection.fd_on_video import face_detection
 
 # Modules for TTS
 path = os.path.join(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'modules'), 'tts');
