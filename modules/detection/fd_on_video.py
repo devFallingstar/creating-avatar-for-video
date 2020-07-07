@@ -28,6 +28,7 @@ def face_detection(video_path, result_csv_path):
     print('facebank updated')
         
     cap = cv2.VideoCapture(video_path)
+    duration = cap.get(cv2.CAP_PROP_FRAME_COUNT)
     cap.set(cv2.CAP_PROP_POS_MSEC, 0)
     
     fps = cap.get(cv2.CAP_PROP_FPS)
