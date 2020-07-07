@@ -4,6 +4,8 @@ import sys
 
 # Modules for landmark detection
 from modules.landmarks.id_detect import csv_reader, detect_from_id
+# Modules for face detection
+from modules.facedetection.fd_on_video import face_detection
 
 # Modules for TTS
 path = os.path.join(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'modules'), 'tts');
@@ -18,6 +20,7 @@ def init_path(output_path, source_path):
 
 
 def run_detection(video_path, result_csv_path):
+    face_detection(video_path, result_csv_path)
     pass
 
 
