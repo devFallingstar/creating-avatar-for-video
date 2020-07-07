@@ -57,7 +57,7 @@ if __name__ == '__main__':
 
     init_path(output_path, source_path)
 
-    run_detection(source_path+"original.mp4", output_path+"")
+    run_detection(source_path+"original.mp4", os.path.join(output_path, "detection", "original.csv"))
     run_landmarks(source_path+"original.mp4", os.path.join(output_path, "detection", "original.csv"))
 
     run_tts(
