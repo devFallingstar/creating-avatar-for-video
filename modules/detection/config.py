@@ -47,7 +47,7 @@ def get_config(training = True):
         conf.ce_loss = CrossEntropyLoss()    
 #--------------------Inference Config ------------------------
     else:
-        conf.facebank_path = conf.data_path/'facebank'
+        conf.facebank_path = conf.data_path/'news'
         conf.threshold = 0.2
         conf.face_limit = 30 
         #when inference, at maximum detect 10 faces in one image, my laptop is slow
