@@ -3,6 +3,8 @@ import os
 
 # Modules for landmark detection
 from modules.landmarks.id_detect import csv_reader, detect_from_id
+# Modules for face detection
+from modules.facedetection import fd_on_video
 
 def init_path(output_path, source_path):
     if not os.path.isdir(output_path) or not os.path.isdir(source_path):
@@ -11,6 +13,7 @@ def init_path(output_path, source_path):
 
 
 def run_detection(video_path, result_csv_path):
+    face_detection(video_path, reulst_csv_path)
     pass
 
 
