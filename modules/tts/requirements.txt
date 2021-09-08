@@ -24,7 +24,7 @@ nnmnkwii==0.0.20
 numba==0.48.0
 numpy==1.19.0
 pandas==1.0.5
-Pillow==7.2.0
+Pillow==8.3.2
 protobuf==3.12.2
 pycparser==2.20
 pyparsing==2.4.7
