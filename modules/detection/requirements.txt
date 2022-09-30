@@ -9,7 +9,7 @@ future==0.18.2
 graphviz==0.8.4
 idna==2.9
 image==1.5.32
-joblib==0.15.1
+joblib==1.2.0
 kiwisolver==1.2.0
 matplotlib==3.2.1
 mkl-fft==1.0.15
